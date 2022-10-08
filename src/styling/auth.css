@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'SukhumvitBold';
+    src: url(../../public/fonts/SukhumvitSet-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'SukhumvitLight';
+    src: url(../../public/fonts/SukhumvitSet-Light.ttf);
+}
+
+@font-face {
+    font-family: 'SukhumvitMedium';
+    src: url(../../public/fonts/SukhumvitSet-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'SukhumvitSemiBold';
+    src: url(../../public/fonts/SukhumvitSet-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'SukhumvitText';
+    src: url(../../public/fonts/SukhumvitSet-Text.ttf);
+}
+
+@font-face {
+    font-family: 'SukhumvitThin';
+    src: url(../../public/fonts/SukhumvitSet-Thin.ttf);
+}
+
+:root {
+    --universal-width: 0px;
+    --universal-height: 0px;
+    --color1: #f58d50;
+    --color2: #f0f0f0;
+    --cardwidth: 750px;
+    --cardheight: 820px;
+    --cardcolor: #ffffff;
+}
+
+p,
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.authmaster {
+    display: flex;
+    width: var(--universal-width);
+    height: var(--universal-height);
+    background-color: var(--color2);
+    overflow: hidden;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.authbg {
+    width: 50%;
+    height: 100%;
+    background-color: var(--color1);
+    padding-left: 18px;
+    padding-top: 18px;
+}
+
+.authcard {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardmaster {
+    width: var(--cardwidth);
+    height: var(--cardheight);
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.frameinput {
+    height: 24px;
+    width: 431px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    padding: 8px 14px 8px 14px;
+    box-shadow: 0px 2px 10px rgba(190, 190, 190, 0.25);
+    display: flex;
+    align-items: center;
+}
+
+.coreinput,
+.coreinput:active {
+    border: none;
+    outline: none;
+    font-family: 'SukhumvitMedium';
+    font-size: 16px;
+    color: #bebebe;
+}
